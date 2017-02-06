@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'jquery' ]
+2 info using npm@2.15.1
+3 info using node@v0.12.16
+4 verbose install initial load of c:\Meir\ebay\server\package.json
+5 warn package.json ebay-api@1.13.1 No README data
+6 warn package.json ebay-api@1.13.1 No license field.
+7 verbose installManyTop reading scoped package data from c:\Meir\ebay\server\node_modules\node_modules\package.json
+8 verbose readDependencies loading dependencies from c:\Meir\ebay\server\package.json
+9 silly cache add args [ 'jquery', null ]
+10 verbose cache add spec jquery
+11 silly cache add parsed spec { raw: 'jquery',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'jquery',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: 'latest',
+11 silly cache add   type: 'tag' }
+12 silly addNamed jquery@latest
+13 verbose addNamed "latest" is being treated as a dist-tag for jquery
+14 info addNameTag [ 'jquery', 'latest' ]
+15 silly mapToRegistry name jquery
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry http://registry.npmjs.org/
+18 silly mapToRegistry data { raw: 'jquery',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   name: 'jquery',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri http://registry.npmjs.org/jquery
+20 verbose addNameTag registry:http://registry.npmjs.org/jquery not in flight; fetching
+21 verbose request uri http://registry.npmjs.org/jquery
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 11:30:52 PM
+24 verbose request id 0498071818be7248
+25 verbose etag W/"58756a0e-14877"
+26 verbose lastModified Tue, 10 Jan 2017 23:11:10 GMT
+27 http request GET http://registry.npmjs.org/jquery
+28 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+29 info attempt registry request try #2 at 11:31:03 PM
+30 verbose etag W/"58756a0e-14877"
+31 verbose lastModified Tue, 10 Jan 2017 23:11:10 GMT
+32 http request GET http://registry.npmjs.org/jquery
+33 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+34 info attempt registry request try #3 at 11:32:03 PM
+35 verbose etag W/"58756a0e-14877"
+36 verbose lastModified Tue, 10 Jan 2017 23:11:10 GMT
+37 http request GET http://registry.npmjs.org/jquery
+38 silly get cb [ 304, undefined ]
+39 verbose etag http://registry.npmjs.org/jquery from cache
+40 verbose get saving jquery to C:\Users\meirha\AppData\Roaming\npm-cache\registry.npmjs.org\jquery\.cache.json
+41 verbose correctMkdir C:\Users\meirha\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+42 silly addNameTag next cb for jquery with tag latest
+43 silly addNamed jquery@3.1.1
+44 verbose addNamed "3.1.1" is a plain semver version for jquery
+45 silly mapToRegistry name jquery
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry http://registry.npmjs.org/
+48 silly mapToRegistry data { raw: 'jquery',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'jquery',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri http://registry.npmjs.org/jquery
+50 verbose addRemoteTarball http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz not in flight; adding
+51 verbose addRemoteTarball [ 'http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz',
+51 verbose addRemoteTarball   '347c1c21c7e004115e0a4da32cece041fad3c8a3' ]
+52 info retry fetch attempt 1 at 11:32:03 PM
+53 info attempt registry request try #1 at 11:32:03 PM
+54 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+55 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+56 info attempt registry request try #2 at 11:32:13 PM
+57 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+58 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+59 info attempt registry request try #3 at 11:33:13 PM
+60 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+61 error fetch failed http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+62 warn retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+63 info retry fetch attempt 2 at 11:33:23 PM
+64 info attempt registry request try #1 at 11:33:23 PM
+65 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+66 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+67 info attempt registry request try #2 at 11:33:33 PM
+68 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+69 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+70 info attempt registry request try #3 at 11:34:33 PM
+71 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+72 error fetch failed http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+73 warn retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+74 info retry fetch attempt 3 at 11:35:33 PM
+75 info attempt registry request try #1 at 11:35:33 PM
+76 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+77 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+78 info attempt registry request try #2 at 11:35:43 PM
+79 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+80 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+81 info attempt registry request try #3 at 11:36:43 PM
+82 http fetch GET http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+83 error fetch failed http://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz
+84 verbose stack Error: getaddrinfo ENOTFOUND genproxy.amdocs.com
+84 verbose stack     at errnoException (dns.js:44:10)
+84 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:94:26)
+85 verbose cwd c:\Meir\ebay\server
+86 error Windows_NT 6.1.7601
+87 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "jquery"
+88 error node v0.12.16
+89 error npm  v2.15.1
+90 error code ENOTFOUND
+91 error errno ENOTFOUND
+92 error syscall getaddrinfo
+93 error network getaddrinfo ENOTFOUND genproxy.amdocs.com
+93 error network This is most likely not a problem with npm itself
+93 error network and is related to network connectivity.
+93 error network In most cases you are behind a proxy or have bad network settings.
+93 error network
+93 error network If you are behind a proxy, please make sure that the
+93 error network 'proxy' config is set properly.  See: 'npm help config'
+94 verbose exit [ 1, true ]
