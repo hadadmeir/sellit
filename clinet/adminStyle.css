@@ -17,15 +17,19 @@ html{
 }
 
 body{
-    padding:60px;
+    padding:5%;
     text-align: center;
 }
 
-.tabContainer {
+ul{
+    list-style:none;
+    display: block;
+    margin: 0px auto;
     overflow: auto;
 }
 
-.tab {
+ul li{
+    display: block;
     padding: 10px 20px;
     cursor:pointer;
     background-color:#DAE5F2;
@@ -35,23 +39,51 @@ body{
     transition:0.3s;
 }
 
-.tab:hover{
+ul li:hover{
     background-color:#C9DBEF;
 }
 
-.tabFocused{
+ul li.focused{
     color:#fff;
     background-color:#A8CBF7;
-    padding: 10px 20px;
-    cursor:pointer;
-    float: left;
-    
-    transition:0.3s;
 }
 
 p{
     padding-top:15px;
     font-size:12px;
+}
+
+
+.floatLeft {
+    float: left;
+}
+
+.tabContainer {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 1%;
+    box-shadow: 0 6px 8px -4px grey;
+}
+
+.tab {
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    background: #D8D8D8;
+}
+
+.tab:hover{
+    background-color:#C9DBEF;
+}
+
+.tabFocused {
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    background: #487A9E;
+    color: #fff;
 }
 
 .row {
@@ -64,8 +96,16 @@ p{
     background: #E2E2E2;
 }
 
+.gridRow1:hover {
+    background: #D1EBFF;
+}
+
 .gridRow2 {
     background: #EAEAEA;
+}
+
+.gridRow2:hover {
+    background: #D1EBFF;
 }
 
 .header {
@@ -73,12 +113,186 @@ p{
     color: #A8CBF7;
 }
 
-@media only screen and (min-width : 480px) {
-    .gridRow1 {
-        background: #E2E2E2;
+.itemDetailsPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.itemDetailsPopup .modalBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.itemDetailsPopup #itemDetails{
+    width: 96%;
+    height: 92%;
+    margin: 2%;
+    background: #fff;
+    border: #e3e3e3;
+    border-radius: 5px;
+    padding: 1%;
+    position: fixed;
+    z-index: 2;
+}
+
+.closeBtnContainer {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+}
+
+.closeModalBtn {
+    float: right;
+    margin: 5px;
+    color: red;
+    font-size: 2em;
+    position: fixed;
+    z-index: 3;
+    right: 3%;
+}
+
+.itemImageContainer {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+}
+
+.detailsContainer {
+    overflow: auto;
+}
+
+.subTitle {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    margin-top: 1%;
+}
+
+.hidden {
+    display: none;
+}
+
+.row {
+    margin: 0;
+}
+
+.buttonsContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+}
+
+.buttonsContainer .btn{
+    margin: 0px 5px;
+}
+
+#fileToUpload {
+    display: none;
+}
+
+@media only screen and (min-width : 320px) {
+    body: {
+        padding: 0;
     }
 
-    .gridRow2 {
-        background: #EAEAEA;
+    h3 {
+        overflow: auto;
+		font-size:1.2em;
+    }
+
+    .tabContainer {
+        overflow: auto;
+        width: 100%;
+        margin-bottom: 2%;
+        box-shadow: 0 6px 8px -4px grey;
+    }
+
+    .itemImageContainer {
+        width: 80px;
+    }
+
+    .itemImageContainer img{
+        width: 80px;
+    }
+
+    .subTitle {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: left;
+        margin-top: 5%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    body: {
+        padding: 0;
+    }
+
+    h3 {
+        overflow: auto;
+		font-size:1.2em;
+    }
+
+    .tabContainer {
+        overflow: auto;
+        width: 100%;
+        margin-bottom: 2%;
+        box-shadow: 0 6px 8px -4px grey;
+    }
+
+    .itemImageContainer {
+        width: 100px;
+    }
+
+    .itemImageContainer img{
+        width: 100px;
+    }
+
+    .subTitle {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: left;
+        margin-top: 5%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    body: {
+        padding: 1%;
+    }
+
+    .itemImageContainer {
+        width: 100px;
+    }
+
+    .itemImageContainer img{
+        width: 100px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    body: {
+        padding: 2%;
+    }
+
+    .subTitle {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: left;
+        margin-top: 1%;
     }
 }
